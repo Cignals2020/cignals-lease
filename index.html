@@ -1,0 +1,667 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<meta name="description" content="沖縄市のイベント主催者向け。木製クロスブースのレンタル、パイプ椅子の運搬、ミニステージの設営の料金と見積り。">
+<title>コザ イベント設営</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap">
+<style>
+  :root{
+    --ground:#F1F2EF;
+    --surface:#FFFFFF;
+    --surface-2:#E9EBE5;
+    --ink:#15211F;
+    --muted:#5D6A66;
+    --line:#D6D9D1;
+    --line-strong:#B8BDB3;
+    --ai:#1A4A72;
+    --ai-soft:#E3EBF2;
+    --wood:#B5833F;
+    --wood-soft:#F3E7D3;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --ground:#101618; --surface:#192124; --surface-2:#212C2F;
+      --ink:#E8EDE9; --muted:#9AA8A3; --line:#2B383B; --line-strong:#3C4C50;
+      --ai:#7FBCE6; --ai-soft:#1C2E3D; --wood:#D7A664; --wood-soft:#2E2718;
+    }
+  }
+  :root[data-theme="dark"]{
+    --ground:#101618; --surface:#192124; --surface-2:#212C2F;
+    --ink:#E8EDE9; --muted:#9AA8A3; --line:#2B383B; --line-strong:#3C4C50;
+    --ai:#7FBCE6; --ai-soft:#1C2E3D; --wood:#D7A664; --wood-soft:#2E2718;
+  }
+
+  *{box-sizing:border-box}
+  body{
+    background:var(--ground); color:var(--ink);
+    font-family:"Zen Kaku Gothic New","Hiragino Sans","Noto Sans JP",system-ui,sans-serif;
+    font-size:15px; line-height:1.75; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:880px;margin:0 auto;padding-inline:20px;padding-block:0 72px}
+  h1,h2,h3{font-family:"Shippori Mincho B1","Hiragino Mincho ProN",serif;text-wrap:balance;margin:0}
+
+  header{padding-block:56px 40px;border-bottom:1px solid var(--line)}
+  .eyebrow{font-size:12px;letter-spacing:.18em;color:var(--ai);font-weight:700;margin:0 0 14px}
+  h1{font-size:clamp(32px,6.6vw,50px);font-weight:700;letter-spacing:.04em;line-height:1.2}
+  .lede{margin:14px 0 0;color:var(--muted);max-width:36em}
+
+  section{padding-block:44px;border-bottom:1px solid var(--line)}
+  section:last-of-type{border-bottom:0}
+  h2{font-size:22px;font-weight:700;letter-spacing:.03em}
+  h3{font-size:16px;font-weight:700;letter-spacing:.03em}
+  .sub{color:var(--muted);font-size:13.5px;margin:6px 0 24px}
+
+  /* サービス3種 */
+  .svc{display:grid;gap:1px;background:var(--line);border:1px solid var(--line);margin-bottom:28px}
+  .svc > div{background:var(--surface);padding:20px}
+  @media (min-width:700px){.svc{grid-template-columns:repeat(3,1fr)}}
+  .svc .tag{
+    font-size:11px;letter-spacing:.12em;font-weight:700;color:var(--ground);
+    background:var(--ai);padding:3px 8px;display:inline-block;margin-bottom:10px
+  }
+  .svc p{margin:8px 0 0;font-size:13px;color:var(--muted);line-height:1.65}
+  .svc dl{margin:14px 0 0;display:grid;grid-template-columns:auto 1fr;gap:4px 12px;font-size:13px}
+  .svc dt{color:var(--muted)}
+  .svc dd{margin:0;text-align:right;font-variant-numeric:tabular-nums}
+
+  .tw{overflow-x:auto;margin-inline:-20px;padding-inline:20px}
+  table{border-collapse:collapse;width:100%;min-width:400px;background:var(--surface)}
+  caption{text-align:left;font-size:12px;letter-spacing:.14em;color:var(--muted);font-weight:700;padding-bottom:9px}
+  th,td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--line);font-size:13.5px}
+  thead th{font-size:11.5px;letter-spacing:.1em;color:var(--muted);font-weight:700;background:var(--surface-2);border-bottom:1px solid var(--line-strong)}
+  td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
+  tbody tr:last-child td{border-bottom:0}
+  .hl td{background:var(--wood-soft)}
+  .note{font-size:12.5px;color:var(--muted);margin:12px 0 0;padding-left:1.1em}
+  .note li{margin-bottom:3px}
+  .grid2{display:grid;gap:28px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+
+  /* 見積り */
+  .calc{background:var(--surface);border:1px solid var(--line-strong);display:grid;grid-template-columns:1fr 1fr}
+  @media (max-width:720px){.calc{grid-template-columns:1fr}}
+  .controls{padding:22px;display:flex;flex-direction:column;gap:20px}
+  .result{padding:22px;background:var(--ai-soft);border-left:1px solid var(--line-strong);display:flex;flex-direction:column;gap:14px}
+  @media (max-width:720px){.result{border-left:0;border-top:1px solid var(--line-strong)}}
+
+  fieldset{border:0;padding:0;margin:0}
+  legend,.lbl{font-size:11.5px;letter-spacing:.12em;font-weight:700;color:var(--muted);padding:0;margin-bottom:9px;display:block}
+  .opts{display:flex;flex-direction:column;gap:6px}
+  .opt{display:flex;gap:9px;align-items:flex-start;cursor:pointer;font-size:13.5px}
+  .opt input{margin:5px 0 0;accent-color:var(--ai);flex:none}
+  .opt span small{display:block;color:var(--muted);font-size:12px;line-height:1.5}
+
+  .item{border:1px solid var(--line-strong);background:var(--ground)}
+  .item > summary{
+    list-style:none;cursor:pointer;padding:12px 14px;display:flex;align-items:center;gap:10px;
+    font-weight:700;font-size:14px;background:var(--surface-2)
+  }
+  .item > summary::-webkit-details-marker{display:none}
+  .item > summary input{accent-color:var(--ai);flex:none;width:16px;height:16px;margin:0}
+  .item > summary .amt{margin-left:auto;font-weight:500;font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums}
+  .item .body{padding:14px;display:flex;flex-direction:column;gap:16px;border-top:1px solid var(--line-strong)}
+
+  .stepper{display:flex;width:max-content;border:1px solid var(--line-strong);background:var(--surface)}
+  .stepper button{width:38px;border:0;background:var(--surface-2);color:var(--ink);font-size:18px;cursor:pointer;line-height:1;font-family:inherit}
+  .stepper button:hover{background:var(--ai);color:var(--ground)}
+  .stepper input{
+    width:84px;border:0;border-inline:1px solid var(--line-strong);background:var(--surface);color:var(--ink);
+    text-align:center;font-size:17px;font-weight:700;padding:8px 0;font-variant-numeric:tabular-nums;font-family:inherit
+  }
+  .unit{font-size:12.5px;color:var(--muted);margin-left:9px}
+  input:focus-visible,button:focus-visible,summary:focus-visible,select:focus-visible{outline:2px solid var(--ai);outline-offset:2px}
+
+  .rows{display:flex;flex-direction:column;gap:6px;font-size:13px}
+  .row{display:flex;justify-content:space-between;gap:12px;align-items:baseline}
+  .row span:first-child{color:var(--muted)}
+  .row b{font-weight:500;font-variant-numeric:tabular-nums}
+  .row.disc span:first-child,.row.disc b{color:var(--wood)}
+  .row.head{font-weight:700;color:var(--ink);margin-top:6px}
+  .row.head span:first-child{color:var(--ink)}
+  .total{border-top:1px solid var(--line-strong);padding-top:14px;display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+  .total .lbl{margin:0}
+  .total output{font-family:"Shippori Mincho B1",serif;font-size:clamp(26px,5.6vw,36px);font-weight:700;font-variant-numeric:tabular-nums;line-height:1.1}
+  .crew{font-size:12.5px;color:var(--muted);background:var(--surface);border:1px dashed var(--line-strong);padding:10px 12px;line-height:1.6}
+  .quote{width:100%;font-family:ui-monospace,"SFMono-Regular",Menlo,monospace;font-size:11.5px;line-height:1.7;background:var(--surface);color:var(--ink);border:1px solid var(--line-strong);padding:12px;resize:vertical;min-height:130px}
+  .copy{font-family:inherit;font-size:13px;font-weight:700;padding:10px 18px;cursor:pointer;background:var(--ai);color:var(--ground);border:0;letter-spacing:.06em}
+  .copy:hover{opacity:.88}
+
+  ol.flow{list-style:none;padding:0;margin:0;display:grid;gap:1px;background:var(--line)}
+  ol.flow li{background:var(--surface);padding:15px 18px;display:flex;gap:14px;align-items:flex-start}
+  ol.flow .step{font-family:"Shippori Mincho B1",serif;font-size:13px;font-weight:700;color:var(--ground);background:var(--ai);width:26px;height:26px;display:grid;place-items:center;flex:none;margin-top:2px}
+  ol.flow strong{display:block;font-weight:700;font-size:14.5px}
+  ol.flow p{margin:2px 0 0;color:var(--muted);font-size:13px}
+
+  .terms{padding-left:1.2em;margin:0;color:var(--muted);font-size:13.5px}
+  .terms li{margin-bottom:7px}
+  .terms b{color:var(--ink)}
+
+  /* 出展者セクション・申込導線 */
+  .ctas{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+  .btn{display:inline-flex;align-items:center;gap:8px;font-size:13.5px;font-weight:700;letter-spacing:.06em;padding:11px 18px;text-decoration:none;border:1px solid var(--ai);color:var(--ai);background:transparent}
+  .btn.solid{background:var(--ai);color:var(--ground)}
+  .btn:hover{opacity:.88}
+  .btn:focus-visible{outline:2px solid var(--ai);outline-offset:2px}
+  .who{font-size:11px;letter-spacing:.14em;font-weight:700;color:var(--wood);margin:0 0 8px}
+  .exh-intro{display:grid;gap:24px;grid-template-columns:minmax(0,260px) minmax(0,1fr);align-items:start;margin-bottom:32px}
+  @media (max-width:640px){.exh-intro{grid-template-columns:1fr}.exh-intro figure{max-width:300px}}
+  .exh-intro figure{margin:0}
+  .exh-intro img{display:block;width:100%;height:auto;border:1px solid var(--line)}
+  .exh-intro figcaption{font-size:12px;color:var(--muted);margin-top:6px}
+  .exh-intro h3{font-size:18px;margin-bottom:8px}
+  .exh-intro p{margin:0 0 14px;max-width:34em}
+  .incl{margin:0;padding-left:1.2em;font-size:13.5px}
+  .incl li{margin-bottom:3px}
+  .stack{display:flex;flex-direction:column;gap:28px}
+  td.big{font-weight:700;color:var(--ai);font-size:15px}
+  .hl.strong td{font-weight:700}
+  .note-inline{font-size:12px;color:var(--muted);display:block}
+  .result .btn{justify-content:center}
+  .flow a,footer a{color:var(--ai);text-underline-offset:3px}
+
+  footer{padding-block:36px;color:var(--muted);font-size:13px;border-top:1px solid var(--line)}
+  footer b{color:var(--ink);font-size:15px;font-family:"Shippori Mincho B1",serif;letter-spacing:.06em}
+  @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <p class="eyebrow">イベント主催者の方へ</p>
+    <h1>コザ イベント設営</h1>
+    <p class="lede">
+      木製クロスブースのレンタル、パイプ椅子の運搬・回収、ミニステージの設営・撤去。
+      コザの商店街やマルシェで使う什器と人手を、まとめて手配できます。
+    </p>
+    <div class="ctas">
+      <a class="btn solid" href="https://forms.gle/izDKLSDjbCMTo8DA8" target="_blank" rel="noopener">申込フォームを開く ↗</a>
+      <a class="btn" href="shop/">商店街で出店を希望される方はこちら</a>
+    </div>
+  </header>
+
+
+  <section id="organizer">
+    <h2>3つのサービス</h2>
+    <p class="sub">すべて税込。クロスブースとステージは 2泊3日（前日お渡し → 当日使用 → 翌日返却）が1単位です。</p>
+
+    <div class="svc">
+      <div>
+        <span class="tag">クロスブース</span>
+        <h3>木製ブースのレンタル</h3>
+        <p>
+          無垢の松材を組んだハンガーバー付きディスプレイブース。
+          天板に商品を並べ、上段のバーに衣類を吊るせます。1台約15分で組み上がります。
+        </p>
+        <dl>
+          <dt>寸法</dt><dd>W160 × D70 × H175cm</dd>
+          <dt>天板</dt><dd>150 × 70cm</dd>
+          <dt>料金</dt><dd>4,000〜6,000円 / 台</dd>
+        </dl>
+      </div>
+      <div>
+        <span class="tag">パイプ椅子</span>
+        <h3>運搬・回収</h3>
+        <p>
+          椅子は主催者さまのものをお預かりします。保管場所から会場へ運び、
+          指定の配置に並べ、イベント後に回収してお戻しします。
+        </p>
+        <dl>
+          <dt>対応</dt><dd>50〜200脚</dd>
+          <dt>含むもの</dt><dd>運搬・整列・回収</dd>
+          <dt>料金</dt><dd>18,000円＋200円 / 脚</dd>
+        </dl>
+      </div>
+      <div>
+        <span class="tag">ミニステージ</span>
+        <h3>設営・撤去</h3>
+        <p>
+          自社のステージ台を使った小型ステージ。アーケード内のミニライブや
+          トークイベント向けです。スカートと階段込みで設営します。
+        </p>
+        <dl>
+          <dt>標準</dt><dd>2枚（約3.6 × 0.9m）</dd>
+          <dt>高さ</dt><dd>約40cm</dd>
+          <dt>料金</dt><dd>資材20,000円＋設営費</dd>
+        </dl>
+      </div>
+    </div>
+
+    <div class="grid2">
+      <div class="tw">
+        <table>
+          <caption>クロスブース レンタル（2泊3日・1台あたり）</caption>
+          <thead><tr><th>台数</th><th class="n">1台あたり</th></tr></thead>
+          <tbody>
+            <tr><td>1〜2台</td><td class="n">6,000円</td></tr>
+            <tr><td>3〜9台</td><td class="n">5,000円</td></tr>
+            <tr><td>10〜19台</td><td class="n">4,500円</td></tr>
+            <tr><td>20台以上</td><td class="n">4,000円</td></tr>
+            <tr class="hl"><td>延長</td><td class="n">1日 +1,000円 / 台</td></tr>
+          </tbody>
+        </table>
+        <ul class="note">
+          <li>Lagoon コザで自分で引取・返却する場合、配送費は無料です</li>
+        </ul>
+      </div>
+
+      <div class="tw">
+        <table>
+          <caption>配達・組立・撤収（クロスブース）</caption>
+          <thead><tr><th>エリア</th><th class="n">料金</th></tr></thead>
+          <tbody>
+            <tr><td>沖縄市内</td><td class="n">3,000円 / 台</td></tr>
+            <tr><td>沖縄市外（本島中南部）</td><td class="n">3,800円 / 台</td></tr>
+            <tr><td>名護市以北・離島</td><td class="n">別途見積</td></tr>
+          </tbody>
+        </table>
+        <ul class="note">
+          <li>最低料金：沖縄市内 30,000円／沖縄市外 40,000円</li>
+        </ul>
+      </div>
+
+      <div class="tw">
+        <table>
+          <caption>パイプ椅子 運搬・回収</caption>
+          <thead><tr><th>エリア</th><th class="n">基本料金</th><th class="n">1脚あたり</th></tr></thead>
+          <tbody>
+            <tr><td>沖縄市内</td><td class="n">18,000円</td><td class="n">200円</td></tr>
+            <tr><td>沖縄市外（本島中南部）</td><td class="n">26,000円</td><td class="n">250円</td></tr>
+            <tr><td>名護市以北・離島</td><td class="n" colspan="2">別途見積</td></tr>
+          </tbody>
+        </table>
+        <ul class="note">
+          <li>50脚から承ります。201脚以上は便数が増えるため別途お見積り</li>
+          <li>椅子のレンタルは行っていません。運搬・整列・回収のみです</li>
+        </ul>
+      </div>
+
+      <div class="tw">
+        <table>
+          <caption>ミニステージ 設営・撤去</caption>
+          <thead><tr><th>項目</th><th class="n">料金</th></tr></thead>
+          <tbody>
+            <tr><td>ステージ資材（2枚・2泊3日）</td><td class="n">20,000円</td></tr>
+            <tr><td>追加1枚につき</td><td class="n">+8,000円</td></tr>
+            <tr><td>設営・撤去　沖縄市内</td><td class="n">25,000円</td></tr>
+            <tr><td>設営・撤去　沖縄市外</td><td class="n">35,000円</td></tr>
+            <tr class="hl"><td>設営　追加1枚につき</td><td class="n">+3,000円</td></tr>
+          </tbody>
+        </table>
+        <ul class="note">
+          <li>スカート（幕）と昇降階段を含みます</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>お見積り</h2>
+    <p class="sub">必要なものにチェックを入れてください。まとめてご依頼いただくと運搬が1便にまとまるため、2品目目からは配送・設営費を20%引きにしています。</p>
+
+    <div class="calc">
+      <div class="controls">
+        <fieldset>
+          <legend>会場エリア</legend>
+          <div class="opts">
+            <label class="opt"><input type="radio" name="area" id="area-in" value="in" checked><span>沖縄市内</span></label>
+            <label class="opt"><input type="radio" name="area" id="area-out" value="out"><span>沖縄市外<small>うるま・北谷・宜野湾・読谷・那覇・浦添 など本島中南部</small></span></label>
+            <label class="opt"><input type="radio" name="area" id="area-far" value="far"><span>名護市以北・離島<small>配送費は個別にお見積りします</small></span></label>
+          </div>
+        </fieldset>
+
+        <details class="item" id="d-booth" open>
+          <summary><input type="checkbox" id="on-booth" checked>クロスブース<span class="amt" id="amt-booth"></span></summary>
+          <div class="body">
+            <div>
+              <span class="lbl">台数</span>
+              <div class="stepper">
+                <button type="button" data-step="-1" data-for="q-booth" aria-label="1台減らす">−</button>
+                <input type="number" id="q-booth" value="10" min="1" max="200" step="1" aria-label="クロスブースの台数">
+                <button type="button" data-step="1" data-for="q-booth" aria-label="1台増やす">＋</button>
+              </div>
+            </div>
+            <fieldset>
+              <legend>受け渡し</legend>
+              <div class="opts">
+                <label class="opt"><input type="radio" name="booth-how" id="booth-self" value="self"><span>Lagoon コザで自分で引取・返却<small>配送費は無料</small></span></label>
+                <label class="opt"><input type="radio" name="booth-how" id="booth-dlv" value="dlv" checked><span>配達・組立・撤収を依頼</span></label>
+              </div>
+            </fieldset>
+            <div>
+              <label class="lbl" for="ext-booth">延長日数</label>
+              <select id="ext-booth">
+                <option value="0" selected>なし（2泊3日）</option>
+                <option value="1">+1日</option>
+                <option value="2">+2日</option>
+                <option value="3">+3日</option>
+              </select>
+            </div>
+          </div>
+        </details>
+
+        <details class="item" id="d-chair">
+          <summary><input type="checkbox" id="on-chair">パイプ椅子の運搬・回収<span class="amt" id="amt-chair"></span></summary>
+          <div class="body">
+            <div>
+              <span class="lbl">脚数</span>
+              <div class="stepper">
+                <button type="button" data-step="-10" data-for="q-chair" aria-label="10脚減らす">−</button>
+                <input type="number" id="q-chair" value="100" min="50" max="300" step="10" aria-label="パイプ椅子の脚数">
+                <button type="button" data-step="10" data-for="q-chair" aria-label="10脚増やす">＋</button>
+              </div>
+              <span class="unit">50脚から・10脚きざみ</span>
+            </div>
+          </div>
+        </details>
+
+        <details class="item" id="d-stage">
+          <summary><input type="checkbox" id="on-stage">ミニステージ<span class="amt" id="amt-stage"></span></summary>
+          <div class="body">
+            <div>
+              <span class="lbl">ステージ台の枚数</span>
+              <div class="stepper">
+                <button type="button" data-step="-1" data-for="q-stage" aria-label="1枚減らす">−</button>
+                <input type="number" id="q-stage" value="2" min="1" max="12" step="1" aria-label="ステージ台の枚数">
+                <button type="button" data-step="1" data-for="q-stage" aria-label="1枚増やす">＋</button>
+              </div>
+              <span class="unit">1枚 約1.8 × 0.9m</span>
+            </div>
+            <fieldset>
+              <legend>受け渡し</legend>
+              <div class="opts">
+                <label class="opt"><input type="radio" name="stage-how" id="stage-self" value="self"><span>Lagoon コザで自分で引取・返却<small>組立はご自身で。配送費は無料</small></span></label>
+                <label class="opt"><input type="radio" name="stage-how" id="stage-dlv" value="dlv" checked><span>設営・撤去を依頼</span></label>
+              </div>
+            </fieldset>
+          </div>
+        </details>
+      </div>
+
+      <div class="result">
+        <div class="rows" id="rows"></div>
+        <div class="total">
+          <span class="lbl">合計（税込）</span>
+          <output id="total">¥0</output>
+        </div>
+        <p class="crew" id="crew"></p>
+        <label class="lbl" for="quote" style="margin:0">この内容をコピーして、申込フォームに貼り付けてください</label>
+        <textarea class="quote" id="quote" readonly aria-label="お見積り内容"></textarea>
+        <button class="copy" type="button" id="copy">見積内容をコピー</button>
+        <a class="btn" href="https://forms.gle/izDKLSDjbCMTo8DA8" target="_blank" rel="noopener">申込フォームを開く ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>当日の作業体制</h2>
+    <p class="sub">
+      2人1組を1班として、朝の4時間（240分）で設営を終える前提で班数を決めています。
+      上の見積りでも、選んだ内容に応じて必要な人数を表示します。
+    </p>
+    <div class="tw">
+      <table>
+        <thead><tr><th>作業</th><th class="n">1班（2人）の所要</th><th class="n">撤収</th></tr></thead>
+        <tbody>
+          <tr><td>クロスブース</td><td class="n">20分 / 台</td><td class="n">10分 / 台</td></tr>
+          <tr><td>パイプ椅子（運搬・整列）</td><td class="n">60分 / 100脚</td><td class="n">40分 / 100脚</td></tr>
+          <tr><td>ミニステージ</td><td class="n">30分 ＋ 15分 / 枚</td><td class="n">20分 ＋ 10分 / 枚</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <ul class="note">
+      <li>クロスブースの純粋な組立時間は1台15分。荷下ろしと位置決めを含めて20分で見込んでいます。</li>
+      <li>20台を4時間で設営する場合は2班（4人）。1班10台ずつで3時間20分、40分の予備が残ります。</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>ご予約の流れ</h2>
+    <ol class="flow">
+      <li><span class="step">1</span><div><strong>申込フォームを送信</strong><p>必要なもの・会場・日程を<a href="https://forms.gle/izDKLSDjbCMTo8DA8" target="_blank" rel="noopener">申込フォーム</a>にご記入ください。この時点では仮押さえです。</p></div></li>
+      <li><span class="step">2</span><div><strong>見積と決済リンクをお送りします</strong><p>2営業日以内に、確定金額とクレジットカード決済リンクをメールでご連絡します。</p></div></li>
+      <li><span class="step">3</span><div><strong>カード決済でご予約確定</strong><p>決済の完了をもって、その日程の什器と人員を確保します。</p></div></li>
+      <li><span class="step">4</span><div><strong>当日</strong><p>ご指定の時刻までに設営を完了させ、イベント終了後に撤収します。</p></div></li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>ご利用条件</h2>
+    <ul class="terms">
+      <li><b>キャンセル料</b>　14日前まで無料／13〜7日前 50%／6日前〜当日 100%（制作に入ったパネル装飾は制作費をご負担いただきます）</li>
+      <li><b>破損・紛失</b>　修理費または部材の実費をご負担いただきます。クロスブースは組み木・短ネジをすべて揃えてご返却ください。</li>
+      <li><b>お預かりする椅子</b>　運搬中の通常の使用による傷を除き、破損があった場合はご連絡します。数量は積込時と返却時に双方で確認します。</li>
+      <li><b>屋外でのご使用</b>　荒天が予想される場合は、転倒防止の重りや固定をお願いします。</li>
+      <li><b>お渡し場所</b>　Lagoon コザ（沖縄県沖縄市中央1-7-8）　自分で引取・返却の場合は、こちらでのお渡し・ご返却になります。</li>
+    </ul>
+  </section>
+
+  <footer>
+    <b>Cignals合同会社</b><br>
+    保管・受け渡し場所　Lagoon コザ（〒904-0004 沖縄県沖縄市中央1-7-8）<br>
+    hello@cignals.jp　／　TEL 070-4442-3704<br>
+    申込フォーム　<a href="https://forms.gle/izDKLSDjbCMTo8DA8" target="_blank" rel="noopener">forms.gle/izDKLSDjbCMTo8DA8</a><br>
+    <a href="shop/">商店街で出店を希望される方はこちら（1台から）</a>
+  </footer>
+</div>
+
+<script>
+(function(){
+  var P = {
+    boothTiers: [[2,6000],[9,5000],[19,4500],[Infinity,4000]],
+    boothExtend: 1000,
+    boothDlv: { in:{per:3000,min:30000}, out:{per:3800,min:40000} },
+    chairDlv:  { in:{base:18000,per:200}, out:{base:26000,per:250} },
+    chairMax: 200,
+    stageBase: 20000, stageAdd: 8000, stageBaseUnits: 2,
+    stageSetup: { in:25000, out:35000 }, stageSetupAdd: 3000,
+    discount: 0.8,
+    window: 240
+  };
+  var AREA = { in:'沖縄市内', out:'沖縄市外（本島中南部）', far:'名護市以北・離島' };
+
+  var $ = function(id){ return document.getElementById(id); };
+  function yen(n){ return '¥' + n.toLocaleString('ja-JP'); }
+  function area(){ return document.querySelector('input[name=area]:checked').value; }
+  function radio(name){ return document.querySelector('input[name=' + name + ']:checked').value; }
+  function num(id, lo, hi){ return Math.max(lo, Math.min(hi, parseInt($(id).value,10) || lo)); }
+  function mins(m){
+    var h = Math.floor(m/60), r = m%60;
+    return (h ? h + '時間' : '') + (r ? r + '分' : (h ? '' : '0分'));
+  }
+  function boothUnit(n){
+    for (var i=0;i<P.boothTiers.length;i++){ if (n <= P.boothTiers[i][0]) return P.boothTiers[i][1]; }
+    return 4000;
+  }
+
+  function build(){
+    var a = area();
+    var far = (a === 'far');
+    var lines = [];          // {label, amount} 明細
+    var moves = [];          // 配送・設営費（割引対象）
+    var goods = 0;           // 品物代の合計
+    var teamMin = 0, downMin = 0;
+    var quoteOnly = false;
+
+    // ── クロスブース ──
+    if ($('on-booth').checked){
+      var bn = num('q-booth', 1, 200);
+      var bd = parseInt($('ext-booth').value,10) || 0;
+      var unit = boothUnit(bn);
+      var rental = unit * bn;
+      var extend = bd * P.boothExtend * bn;
+      goods += rental + extend;
+      lines.push({head:true, label:'クロスブース ' + bn + '台'});
+      lines.push({label:'　レンタル料 ' + yen(unit) + ' × ' + bn + '台', amount:rental});
+      if (extend) lines.push({label:'　延長 ' + bd + '日分', amount:extend});
+
+      if (radio('booth-how') === 'dlv'){
+        if (far){ lines.push({label:'　配達・組立・撤収', quote:true}); quoteOnly = true; }
+        else {
+          var c = P.boothDlv[a];
+          var fee = Math.max(c.per * bn, c.min);
+          moves.push({ label:'　配達・組立・撤収', amount:fee });
+        }
+        teamMin += bn * 20;
+        downMin += bn * 10;
+      }
+      $('amt-booth').textContent = bn + '台';
+    } else { $('amt-booth').textContent = ''; }
+
+    // ── パイプ椅子 ──
+    if ($('on-chair').checked){
+      var cn = num('q-chair', 50, 300);
+      lines.push({head:true, label:'パイプ椅子 ' + cn + '脚'});
+      if (far || cn > P.chairMax){
+        lines.push({label:'　運搬・回収', quote:true});
+        quoteOnly = true;
+      } else {
+        var cc = P.chairDlv[a];
+        moves.push({ label:'　運搬・回収（基本 ' + yen(cc.base) + ' ＋ ' + yen(cc.per) + ' × ' + cn + '脚）',
+                     amount: cc.base + cc.per * cn });
+      }
+      teamMin += Math.round(cn / 100 * 60);
+      downMin += Math.round(cn / 100 * 40);
+      $('amt-chair').textContent = cn + '脚';
+    } else { $('amt-chair').textContent = ''; }
+
+    // ── ミニステージ ──
+    if ($('on-stage').checked){
+      var sn = num('q-stage', 1, 12);
+      var extra = Math.max(0, sn - P.stageBaseUnits);
+      var material = P.stageBase + extra * P.stageAdd;
+      goods += material;
+      lines.push({head:true, label:'ミニステージ ' + sn + '枚'});
+      lines.push({label:'　ステージ資材', amount:material});
+
+      if (radio('stage-how') === 'dlv'){
+        if (far){ lines.push({label:'　設営・撤去', quote:true}); quoteOnly = true; }
+        else {
+          moves.push({ label:'　設営・撤去', amount: P.stageSetup[a] + extra * P.stageSetupAdd });
+        }
+        teamMin += 30 + sn * 15;
+        downMin += 20 + sn * 10;
+      }
+      $('amt-stage').textContent = sn + '枚';
+    } else { $('amt-stage').textContent = ''; }
+
+    // ── 配送・設営費（2品目目から20%引き）──
+    moves.sort(function(x,y){ return y.amount - x.amount; });
+    var moveTotal = 0, discTotal = 0;
+    moves.forEach(function(m, i){
+      if (i === 0){ moveTotal += m.amount; m.final = m.amount; }
+      else {
+        m.final = Math.round(m.amount * P.discount);
+        discTotal += m.amount - m.final;
+        moveTotal += m.final;
+      }
+    });
+
+    return { lines:lines, moves:moves, goods:goods, moveTotal:moveTotal, discTotal:discTotal,
+             total:goods + moveTotal, teamMin:teamMin, downMin:downMin,
+             quoteOnly:quoteOnly, area:a,
+             any: $('on-booth').checked || $('on-chair').checked || $('on-stage').checked };
+  }
+
+  function render(){
+    var r = build();
+    var rows = $('rows'), html = '';
+
+    if (!r.any){
+      rows.innerHTML = '<div class="row"><span>品目を選んでください</span></div>';
+      $('total').textContent = '¥0';
+      $('crew').hidden = true;
+      $('quote').value = '';
+      return;
+    }
+
+    // 配送・設営費を該当品目の下にではなく、まとめて並べる
+    r.lines.forEach(function(l){
+      if (l.head){ html += '<div class="row head"><span>' + l.label + '</span><b></b></div>'; }
+      else { html += '<div class="row"><span>' + l.label + '</span><b>' + (l.quote ? '別途見積' : yen(l.amount)) + '</b></div>'; }
+    });
+    if (r.moves.length){
+      html += '<div class="row head"><span>配送・設営</span><b></b></div>';
+      r.moves.forEach(function(m){
+        html += '<div class="row"><span>' + m.label + '</span><b>' + yen(m.amount) + '</b></div>';
+      });
+      if (r.discTotal){
+        html += '<div class="row disc"><span>　まとめ依頼の割引（2品目目から20%）</span><b>−' + yen(r.discTotal) + '</b></div>';
+      }
+    }
+    rows.innerHTML = html;
+    $('total').textContent = yen(r.total) + (r.quoteOnly ? ' +α' : '');
+
+    if (r.teamMin > 0){
+      var teams = Math.max(1, Math.ceil(r.teamMin / P.window));
+      $('crew').hidden = false;
+      $('crew').textContent =
+        '当日の体制：' + teams + '班・' + (teams*2) + '人　' +
+        '設営 ' + mins(Math.ceil(r.teamMin / teams)) + '／撤収 ' + mins(Math.ceil(r.downMin / teams)) +
+        '　（2人1組・4時間で設営を終える前提）';
+    } else { $('crew').hidden = true; }
+
+    // コピー用テキスト
+    var q = ['【イベント設営 お見積り】', '会場エリア： ' + AREA[r.area], ''];
+    r.lines.forEach(function(l){
+      q.push(l.head ? '■ ' + l.label
+                    : l.label.replace(/^　/, '  ') + '　' + (l.quote ? '別途見積' : yen(l.amount)));
+    });
+    if (r.moves.length){
+      q.push('■ 配送・設営');
+      r.moves.forEach(function(m){ q.push(m.label.replace(/^　/, '  ') + '　' + yen(m.amount)); });
+      if (r.discTotal) q.push('  まとめ依頼の割引　−' + yen(r.discTotal));
+    }
+    q.push('────────────');
+    q.push('合計（税込） ' + yen(r.total) + (r.quoteOnly ? '　＋ 別途見積分' : ''));
+    $('quote').value = q.join('\n');
+  }
+
+  Array.prototype.forEach.call(document.querySelectorAll('.stepper button'), function(b){
+    b.addEventListener('click', function(){
+      var el = $(b.dataset.for);
+      var v = (parseInt(el.value,10) || 0) + parseInt(b.dataset.step,10);
+      el.value = Math.max(+el.min, Math.min(+el.max, v));
+      render();
+    });
+  });
+  Array.prototype.forEach.call(
+    document.querySelectorAll('input[type=radio],input[type=number],input[type=checkbox],select'),
+    function(el){ el.addEventListener('input', render); el.addEventListener('change', render); }
+  );
+  Array.prototype.forEach.call(document.querySelectorAll('.item > summary input'), function(cb){
+    cb.addEventListener('click', function(e){
+      e.stopPropagation();
+      var d = cb.closest('.item');
+      if (cb.checked) d.open = true;
+      render();
+    });
+  });
+
+  $('copy').addEventListener('click', function(){
+    var btn = this, qt = $('quote');
+    var done = function(){
+      var t = btn.textContent;
+      btn.textContent = 'コピーしました';
+      setTimeout(function(){ btn.textContent = t; }, 1600);
+    };
+    qt.focus(); qt.select();
+    if (navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(qt.value).then(done, function(){
+        try { document.execCommand('copy'); done(); } catch(e){ btn.textContent = '上のテキストを選択してコピーしてください'; }
+      });
+    } else {
+      try { document.execCommand('copy'); done(); } catch(e){ btn.textContent = '上のテキストを選択してコピーしてください'; }
+    }
+  });
+
+  render();
+})();
+</script>
+
+</body>
+</html>
